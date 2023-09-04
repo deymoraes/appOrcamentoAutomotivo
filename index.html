@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Orçamento Automotivo</title>
+</head>
+<body>
+    <h1>Orçamento Automotivo</h1>
+    
+    <h2>Dados do Cliente e do Carro</h2>
+    <form id="formulario">
+        <label for="cliente">Nome do Cliente:</label>
+        <input type="text" id="cliente" required><br>
+
+        <label for="modeloCarro">Modelo do Carro:</label>
+        <input type="text" id="modeloCarro" required><br>
+
+        <label for="kmRecebida">KM Recebida:</label>
+        <input type="number" id="kmRecebida" required><br>
+
+        <label for="placa">Placa:</label>
+        <input type="text" id="placa" required><br>
+
+        <label for="dataEntrada">Data de Entrada:</label>
+        <input type="text" id="dataEntrada" required><br>
+
+        <label for="dataTermino">Data de Término Esperado:</label>
+        <input type="text" id="dataTermino" required><br>
+
+        <h2>Serviços</h2>
+        <label for="nomeServico">Nome do Serviço:</label>
+        <input type="text" id="nomeServico">
+        <label for="valorServico">Valor do Serviço:</label>
+        <input type="number" id="valorServico">
+        <button type="button" id="adicionarServico">Adicionar Serviço</button>
+        <ul id="listaServicos"></ul>
+
+        <h2>Peças e Materiais</h2>
+        <label for="descricaoPeca">Descrição da Peça/Material:</label>
+        <input type="text" id="descricaoPeca">
+        <label for="quantidadePeca">Quantidade:</label>
+        <input type="number" id="quantidadePeca">
+        <label for="precoPeca">Preço por Unidade:</label>
+        <input type="number" id="precoPeca">
+        <button type="button" id="adicionarPeca">Adicionar Peça/Material</button>
+        <ul id="listaPecasMateriais"></ul>
+
+        <h2>Total do Orçamento</h2>
+        <p id="total"></p>
+
+        <button type="submit">Calcular Total</button>
+    </form>
+
+    <script src="script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
